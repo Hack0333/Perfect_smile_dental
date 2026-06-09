@@ -1,0 +1,107 @@
+:root {
+  --page-bg: #fffcf8;
+  --page-surface: #f8f4ee;
+  --card-bg: #ffffff;
+  --surface-soft: rgba(91, 141, 239, 0.08);
+  --border: #e8e1d8;
+  --divider: #f3eee8;
+  --text-primary: #1f2a44;
+  --text-secondary: #64748b;
+  --text-body: #475569;
+  --text-muted: #64748b;
+  --primary: #5b8def;
+  --primary-hover: #4a7de0;
+  --secondary: #6bc4b8;
+  --accent: #f4b183;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --shadow-card: 0 40px 90px rgba(15, 23, 42, 0.08);
+  --shadow-glass: 0 25px 60px rgba(15, 23, 42, 0.09);
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  color-scheme: light;
+  color: var(--text-primary);
+  background: var(--page-bg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  --page-bg: #101828;
+  --page-surface: #1b263b;
+  --card-bg: #22304a;
+  --surface-soft: rgba(125, 211, 199, 0.1);
+  --border: #344054;
+  --divider: #2a3547;
+  --text-primary: #fffdf9;
+  --text-secondary: #a8b3c7;
+  --text-body: #d1d9e6;
+  --text-muted: #a8b3c7;
+  --primary: #7fb3ff;
+  --accent: #ffc89a;
+  --primary-hover: #60a5fa;
+  --secondary: #7dd3c7;
+  --success: #4ade80;
+  --danger: #ef4444;
+  --shadow-card: 0 40px 90px rgba(15, 23, 42, 0.22);
+  --shadow-glass: 0 25px 60px rgba(15, 23, 42, 0.24);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  overflow-x: hidden;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100svh;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
