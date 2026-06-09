@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import calendly from '../env';
+const calendlyUrl = import.meta.env.VITE_CALENDLY_URL;
 
 export default function Appointment() {
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function Appointment() {
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-[color:var(--card-bg)] shadow-2xl dark:dark:border-[color:var(--border)] dark:bg-[color:var(--card-bg)]">
           <div
             className="calendly-inline-widget"
-            data-url={calendly}
+            data-url={calendlyUrl}
             style={{ minWidth: '320px', height: '700px', borderRadius: '32px' }}
           />
         </div>
