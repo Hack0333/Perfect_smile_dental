@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import StickyContactCTA from './components/StickyContactCTA';
 import { ThemeProvider } from './hooks/ThemeProvider';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -45,6 +46,7 @@ function AppContent() {
           </Routes>
         </motion.div>
       </AnimatePresence>
+      <StickyContactCTA />
       <Footer />
       <ScrollToTop />
     </div>
