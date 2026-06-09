@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import calendly from '../env';
 
 export default function Appointment() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function Appointment() {
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-[color:var(--card-bg)] shadow-2xl dark:dark:border-[color:var(--border)] dark:bg-[color:var(--card-bg)]">
           <div
             className="calendly-inline-widget"
-            data-url="https://calendly.com/perfectsmiledental/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+            data-url={calendly}
             style={{ minWidth: '320px', height: '700px', borderRadius: '32px' }}
           />
         </div>
