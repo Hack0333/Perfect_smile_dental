@@ -14,7 +14,6 @@ export default function Appointment() {
       }
     };
   }, []);
-
   return (
     <section id="appointment" className="bg-[color:var(--surface-soft)] py-24 dark:bg-[color:var(--page-bg)] sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
@@ -25,7 +24,6 @@ export default function Appointment() {
             Choose a convenient time slot, and our team will confirm your appointment immediately.
           </p>
         </div>
-
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-[color:var(--card-bg)] shadow-2xl dark:dark:border-[color:var(--border)] dark:bg-[color:var(--card-bg)]">
           <div
             className="calendly-inline-widget"

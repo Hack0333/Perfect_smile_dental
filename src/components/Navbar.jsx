@@ -31,7 +31,7 @@ export default function Navbar() {
         ? 'bg-[color:var(--page-surface)]/95 border-b border-[color:var(--border)] shadow-xl backdrop-blur-xl'
         : 'bg-transparent'
     }`}>
-      <div className="w-full max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div className="w-full max-w-6xl mx-auto px-5 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img src={logoImg} alt="Perfect Smile Logo" className="w-11 h-11 rounded-2xl border border-[color:var(--border)] bg-[color:var(--page-bg)] object-contain" />
           <div className="flex flex-col">
